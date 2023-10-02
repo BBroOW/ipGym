@@ -42,7 +42,11 @@ a:hover {
     margin-right: 10rem;
     display: flex;
     flex-direction: row;
-    
+    transition: 1s;    
+  }
+
+  #booking-container:hover path{
+    fill: #F746A1 ;
   }
 
   #butikk-container{
@@ -54,6 +58,10 @@ a:hover {
     
   }
 
+  #butikk-container:hover path{
+    fill: #F746A1 ;
+  }
+
   #senteret-container{
     scale: 140%;
     margin-top: 4rem;
@@ -61,6 +69,10 @@ a:hover {
     display: flex;
     flex-direction: row;
     
+  }
+
+  #senteret-container:hover path{
+    fill: #F746A1 ;
   }
 
   #logginn-container{
@@ -72,7 +84,17 @@ a:hover {
     
   }
 
+ #logginn-container:hover path{
+    fill: #F746A1 ;
+  }
 
+  #logo{
+    transition: 0.5s;
+  }
+
+  #logo:hover{
+    scale: 120%;
+  }
 
   
-}
+
