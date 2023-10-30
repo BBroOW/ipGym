@@ -28,8 +28,16 @@ function Usersite() {
       <button type="button" id="søppelenhet" onClick={onClick}>
         Trykk for å legge til en kilo søppel<p></p>
       </button>
-      {/* Display the updated trash count */}
-      <div id="title">Trash Count: {trashCount}</div>
+      <button
+        id="reset"
+        type="button"
+        onClick={() => {
+          setTrashCount(0);
+          localStorage.setItem("trashCount", "0");
+        }}
+      >
+        Reset
+      </button>
     </div>
   );
 }

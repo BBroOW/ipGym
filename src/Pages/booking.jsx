@@ -1,8 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
-import heropage from ".././assets/heropage.avif";
-import { Link } from "react-router-dom";
 
 function Booking() {
   return (

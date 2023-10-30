@@ -30,3 +30,12 @@
 h1 {
   color: #12a8f4;
 }
+/*
+center reset button
+*/
+#reset {
+  position: absolute;
+  margin-left: 30px;
+  height: 30px;
+  width: 50px;
+}
