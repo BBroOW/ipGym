@@ -153,3 +153,7 @@ a:hover {
 #logo:hover {
   scale: 120%;
 }
+
+#error {
+  color: red;
+}

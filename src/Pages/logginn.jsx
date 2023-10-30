@@ -1,11 +1,17 @@
 import React, { useState } from "react";
 
 function loggInn() {
-  const [username, setBrukerNavn] = useState();
-  const [Passord, setPassord] = useState();
+  const [username, setUsername] = useState();
+  const [password, setPassword] = useState();
   function onClick() {
     localStorage.setItem("username", username);
-    localStorage.setItem("Passord", Passord);
+    localStorage.setItem("password", password);
+    if ((username, password === undefined)) {
+      document.getElementById("error").innerHTML =
+        "Skriv inn brukernavn og passord";
+    } else {
+      window.location.href = "/brukerside";
+    }
   }
 
   return (
@@ -18,16 +24,17 @@ function loggInn() {
         <input
           placeholder="username"
           value={username}
-          onChange={(e) => setBrukerNavn(e.target.value)}
+          onChange={(e) => setUsername(e.target.value)}
         />
         <input
-          placeholder="Passord"
-          value={Passord}
-          onChange={(e) => setPassord(e.target.value)}
+          placeholder="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
         />
         <button type="button" onClick={onClick}>
           sende inn
         </button>
+        <h1 id="error"></h1>
       </div>
     </div>
   );
